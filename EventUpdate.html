@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Update</title>
+</head>
+
+<body>
+    <div class="outer">
+        <h3>Event 1.</h3>
+        <p>Number of available seats : 23</p>
+
+        <div class="grid-container">
+
+            <div class="grid-item1 img">
+
+            </div>
+            <div class=" grid-item name">
+                <label>Name: </label>
+                <input type="text" />
+            </div>
+            <div class="grid-item mail">
+                <label>Email: </label>
+                <input type="text" />
+            </div>
+            <div class="grid-item phn">
+                <label>Phn no: </label>
+                <input type="text" />
+            </div>
+            <div class=" grid-item seat">
+                <label>No.of.seats: </label>
+                <select name="country">
+                    <option>--Select--</option>
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+
+            <div class="grid-item name2">
+                <label>Name of the attendee 2: </label>
+                <input type="text" />
+            </div>
+            <div class="grid-item button">
+                <input type="button" value="submit" class="submit">
+                <input type="button" value="cancel" class="cancel">
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <style>
+        .grid-item2 {
+            display: grid;
+            grid-template-columns: 300px 300px 250px;
+            grid-template-rows: 30px;
+        }
+
+        .submit {
+            grid-column: 2 / span 2;
+            grid-row: 1 / span 1;
+
+        }
+
+        .cancel {
+            grid-column: 3 / span 3;
+            grid-row: 1 / span 1;
+
+        }
+
+        .img {
+            grid-row: 1 / span 5;
+            grid-column: 1 / span 1;
+            border-top: 1px ridge black;
+            border-bottom: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+
+        }
+
+        .name {
+            grid-column: 2 / span 2;
+            grid-row: 1 / span 1;
+
+        }
+
+        .mail {
+            grid-column: 2 / span 2;
+            grid-row: 2 / span 2;
+
+        }
+
+        .phn {
+            grid-column: 2 / span 2;
+            grid-row: 3 / span 3;
+
+        }
+
+        .seat {
+            grid-column: 2 / span 2;
+            grid-row: 4 / span 4;
+        }
+
+        .name2 {
+            grid-column: 2 / span 2;
+            grid-row: 5 / span 5;
+
+        }
+
+        .button {
+            grid-column: 2 / span 2;
+            grid-row: 6 / span 6;
+        }
+
+
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+
+
+        .outer {
+            padding: 20px;
+            border-top: 1px ridge black;
+            border-bottom: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            margin: 20px;
+            width: 1000px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 40px 40px 40px 40px 40px 40px;
+            border-top: 1px ridge black;
+            border-bottom: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            padding: 30px;
+
+        }
+
+        .grid-item {
+            height: 10px;
+        }
+    </style>
+</body>
+
+</html>
